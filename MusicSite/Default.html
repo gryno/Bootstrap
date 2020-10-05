@@ -8,6 +8,69 @@
 	<link href="Content/pdsa-sidebar.css" rel="stylesheet" />
 	<link href="Content/pdsa-summary-block.css" rel="stylesheet" />
 
+	<style>
+		.pdsa-read-box {
+			position: relative;
+			border-width: thin;
+			border-style: solid;
+			border-color: #31708f;
+			width: 100%;
+			padding: 1em;
+			opacity: 0.9;
+			margin: 0.3em;
+			min-height: 16em;
+		}
+
+			.pdsa-read-box:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
+
+			.pdsa-read-box .readme-header {
+				margin: -1em;
+				padding: 0.5em;
+				background-color: #31708f;
+				text-align: center;
+			}
+
+				.pdsa-read-box .readme-header i,
+				.pdsa-read-box .readme-header div {
+					font-size: xx-large;
+				}
+
+			.pdsa-read-box .readme-body {
+				position:relative;
+				margin-top:2em;
+				margin-bottom:2em;
+			}
+
+			.pdsa-read-box .readme-body h1{
+				font-size:x-large;
+			}
+
+			.pdsa-read-box .readme-body p{
+				font-size:medium;
+			}
+
+
+			.pdsa-read-box .readme-footer{
+				position:absolute;
+				bottom:0em;
+				right:0em;
+				width:100%;
+				text-align:center;
+				padding-bottom:0.5em;
+				font-size:small;
+			}
+
+
+			.pdsa-read-box .readme-footer a{
+				text-decoration:none;
+				color:red;
+			}
+
+
+	</style>
 </head>
 <body>
 
@@ -98,7 +161,8 @@
 						<div class="summary-line2">Genres</div>
 					</div>
 					<div class="summary-footer">
-						<a href="#">View Genres
+						<a href="#">
+							View Genres
 							<i class="glyphicon glyphicon-chevron-right pull-right"></i>
 						</a>
 					</div>
@@ -161,15 +225,17 @@
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-8">
-				<div class="readme-header">
-					<i class="glyphicon glyphicon-music"></i>
-				</div>
-				<div class="readme-body">
-					<h1>Free Music</h1>
-					<p>Each day we have a free song selected for you.</p>
-				</div>
-				<div class="readme-footer">
-					<a href="#">+ See My Song ...</a>
+				<div class="pdsa-read-box">
+					<div class="readme-header">
+						<i class="glyphicon glyphicon-music"></i>
+					</div>
+					<div class="readme-body">
+						<h1>Free Music</h1>
+						<p>Each day we have a free song selected for you.</p>
+					</div>
+					<div class="readme-footer">
+						<a href="#">+ See My Song ...</a>
+					</div>
 				</div>
 			</div>
 		</div>
