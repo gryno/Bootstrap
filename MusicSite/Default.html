@@ -6,61 +6,7 @@
 	<link href="Content/bootstrap.min.css" rel="stylesheet" />
 	<link href="Content/Site.css" rel="stylesheet" />
 	<link href="Content/pdsa-sidebar.css" rel="stylesheet" />
-
-	<style>
-		.pdsa-summary-block{
-			position:relative;
-			width:100%;
-			margin:0.3em;
-			padding:1em;
-			min-height:15em;
-			background-color:#428bca;
-			color:#fff;
-		}
-			.pdsa-summary-block .summary-background i,
-			.pdsa-summary-block .summary-background div {
-				margin-left: -0.4em;
-				margin-top: 0.1em;
-				font-size: 8em;
-				opacity: 0.3;
-			}
-		.pdsa-summary-block .summary-body {
-			position:absolute;
-			top:1.3em;
-			right:0.8em;
-		}
-
-			.pdsa-summary-block .summary-body .summary-line1{
-				text-align:right;
-				font-size:xx-large;
-			}
-			.pdsa-summary-block .summary-body .summary-line2 {
-				text-align: right;
-				font-size: medium;
-			}
-
-			.pdsa-summary-block .summary-footer{
-				position:absolute;
-				background-color:blue;
-				bottom:0em;
-				right:0em;
-				width:100%;
-				padding: 0.4em;
-				font-weight:300;
-				text-transform:uppercase;
-				font-size:small;
-				opacity:0.6;
-			}
-
-			.pdsa-summary-block .summary-footer a {
-				text-decoration:none;
-				color: white;
-			}
-				.pdsa-summary-block .summary-footer:hover {
-					opacity: 1;
-					cursor:pointer;
-				}
-	</style>
+	<link href="Content/pdsa-summary-block.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -143,7 +89,7 @@
 	<div class="container body-content">
 		<div class="row">
 			<div class="col-xs-10 col-sm-4">
-				<div class="pdsa-summary-block">
+				<div class="pdsa-summary-block pdsa-summary-block-primary">
 					<div class="summary-background">
 						<i class="glyphicon glyphicon-globe"></i>
 					</div>
