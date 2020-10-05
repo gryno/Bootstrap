@@ -37,7 +37,6 @@
 					color: #fff;
 					text-decoration: none;
 				}
-
 				.pdsa-sn-wrapper ul li a:active,
 				.pdsa-sn-wrapper ul li a:focus,
 				.pdsa-sn-wrapper ul li ul li a:active,
@@ -65,7 +64,7 @@
 		/* Style for 2nd level */
 		.pdsa-sn-wrapper ul li ul {
 			list-style: none;
-			margin-top: 1em;
+			margin-top: -1em;
 			margin-left: 1em;
 		}
 
