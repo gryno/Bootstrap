@@ -1,7 +1,10 @@
 ﻿In this Sample
 -----------------------------
-Created a new Empty Web Project
-Added Bootstrap and jQuery
-Added Default.html
-Added a left navigation system
-Added \Content\pdsa-sidebar.css which contains all of the CSS for the left navigation system
+Added new pages
+  Country.html - A table of country music
+  Genres.html - Added Readme Boxes to this page
+  Jazz.html - A table of Jazz music
+  Rock.html - A table of rock music
+  TemplatePage.html - A template for any other pages you build
+Default.html
+  Added Summary Blocks to this page

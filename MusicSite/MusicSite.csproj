@@ -63,6 +63,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\pdsa-readme-box.css" />
     <Content Include="Content\pdsa-summary-block.css" />
+    <Content Include="Country.html" />
     <Content Include="Genres.html" />
     <Content Include="Default.html" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -86,12 +87,15 @@
     <Content Include="Default1.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Genres2.html" />
+    <Content Include="Jazz.html" />
     <Content Include="Readme.txt" />
+    <Content Include="Rock.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.11.0.min.js" />
     <Content Include="Scripts\pdsa-common.js" />
     <Content Include="Songs.html" />
+    <Content Include="TemplatePage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
