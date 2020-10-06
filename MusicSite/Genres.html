@@ -121,8 +121,8 @@
 				<div class="well well-sm">
 					<div class="btn-group" data-toggle="buttons">
 						<label class="btn btn-default">
-							<span class="glyphicon glyphicon-ok-circle"></span>
-							<input type="checkbox" /> Jazz
+							<span class="glyphicon glyphicon-unchecked"></span>
+							<input type="checkbox" checked="checked" /> Jazz
 						</label>
 						<label class="btn btn-default">
 							<span class="glyphicon glyphicon-unchecked"></span>
@@ -193,5 +193,29 @@
 	<script src="Scripts/jquery-1.11.0.min.js"></script>
 	<script src="Scripts/bootstrap.min.js"></script>
 	<script src="Scripts/pdsa-common.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$("[type='checkbox']").on('change', function () {
+				if ($(this).prop('checked')) {
+					$(this).prev()
+						.removeClass('glyphicon-unchecked')
+						.addClass('glyphicon-ok-circle');
+				}
+				else {
+					$(this).prev()
+						.removeClass('glyphicon-ok-circle')
+						.addClass('glyphicon-unchecked');
+				}
+			});
+
+			$("input:checked").prev()
+				.removeClass('glyphicon-unchecked')
+				.addClass('glyphicon-ok-circle');
+
+			$("input:checked").parent()
+				.addClass('active');
+		});
+	</script>
 </body>
 </html>
