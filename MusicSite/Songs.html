@@ -200,6 +200,39 @@
 			$("#songSelect .btn").on('click', function () {
 				ToggleRadioButtons("#songSelect", $(this));
 			});
+
+			$("[type='checkbox']").on('change', function () {
+				if ($(this).prop('checked')) {
+					//$(this).prev()
+					$(this).parent().find(".glyphicon")
+						.removeClass('glyphicon-unchecked')
+						.addClass('glyphicon-ok-circle');
+					$(this).parent()
+						.removeClass('btn-primary')
+						.addClass('btn-success');
+					$(this).next().text("Selected");
+				}
+				else {
+					//$(this).prev()
+					$(this).parent().find(".glyphicon")
+						.removeClass('glyphicon-ok-circle')
+						.addClass('glyphicon-unchecked');
+					$(this).parent()
+						.removeClass('btn-success')
+						.addClass('btn-primary');
+					$(this).next().text("Not Selected");
+
+				}
+			});
+
+			//$("input:checked").prev()
+			$("input:checked").parent().find("span")
+				.removeClass('glyphicon-unchecked')
+				.addClass('glyphicon-ok-circle');
+			$("input:checked").parent()
+				.addClass('active')
+
+
 		});
 
 		function ToggleRadioButtons(groupName, current) {
