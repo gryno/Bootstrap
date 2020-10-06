@@ -1,0 +1,100 @@
+﻿/* Themes for the Readme Boxes */
+
+.pdsa-read-box-primary {
+	border-color: #428bca;
+}
+
+	.pdsa-read-box-primary .readme-header {
+		background-color: #428bca;
+	}
+
+		.pdsa-read-box-primary .readme-header a {
+			color: white;
+		}
+
+
+
+.pdsa-read-box-success {
+	border-color: #3c763c;
+}
+
+	.pdsa-read-box-success .readme-header {
+		background-color: green;
+	}
+
+		.pdsa-read-box-success .readme-header a {
+			color: red;
+		}
+
+
+.pdsa-read-box-info {
+	border-color: #31798f;
+}
+
+	.pdsa-read-box-info .readme-header {
+		background-color: #31798f;
+	}
+
+		.pdsa-read-box-info .readme-header a {
+			color: red;
+		}
+
+
+
+/* Structure for the Readme Boxes */
+.pdsa-read-box {
+	position: relative;
+	border-width: thin;
+	border-style: solid;
+	width: 100%;
+	padding: 1em;
+	opacity: 0.9;
+	margin: 0.3em;
+	min-height: 16em;
+}
+
+	.pdsa-read-box:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.pdsa-read-box .readme-header {
+		margin: -1em;
+		padding: 0.5em;
+		text-align: center;
+	}
+
+		.pdsa-read-box .readme-header i,
+		.pdsa-read-box .readme-header div {
+			font-size: xx-large;
+		}
+
+	.pdsa-read-box .readme-body {
+		position: relative;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+		.pdsa-read-box .readme-body h1 {
+			font-size: x-large;
+		}
+
+		.pdsa-read-box .readme-body p {
+			font-size: medium;
+		}
+
+
+	.pdsa-read-box .readme-footer {
+		position: absolute;
+		bottom: 0em;
+		right: 0em;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 0.5em;
+		font-size: small;
+	}
+
+
+		.pdsa-read-box .readme-footer a {
+			text-decoration: none;
+		}

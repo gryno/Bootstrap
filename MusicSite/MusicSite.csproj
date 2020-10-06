@@ -61,7 +61,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\pdsa-readme-box.css" />
     <Content Include="Content\pdsa-summary-block.css" />
+    <Content Include="Genres.html" />
     <Content Include="Default.html" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
