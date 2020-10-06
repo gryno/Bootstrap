@@ -85,6 +85,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default1.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Genres2.html" />
     <Content Include="Readme.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
