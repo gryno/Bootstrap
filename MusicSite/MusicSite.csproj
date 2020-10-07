@@ -98,6 +98,7 @@
     <Content Include="Scripts\pdsa-numberformat.js" />
     <Content Include="Scripts\pdsa-product-selector.js" />
     <Content Include="Songs.html" />
+    <Content Include="Playlists.html" />
     <Content Include="TemplatePage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
