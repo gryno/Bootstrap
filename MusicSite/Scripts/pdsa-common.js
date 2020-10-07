@@ -1,3 +1,3 @@
 ﻿$(document).ready(function () {
-	$('body').removeClass('notransition');
+  $('body').removeClass('notransition');
 });
