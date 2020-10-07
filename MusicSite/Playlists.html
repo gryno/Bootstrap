@@ -127,7 +127,7 @@
 								<a href="#mytoprated"
 								   data-toggle="collapse"
 								   data-parent="#playlists"
-								   class="pdsa-panel-toggle glyphicon glyphicon-minus"></a>
+								   class="pdsa-panel-toggle "></a>
 							</h1>
 						</div>
 						<div id="mytoprated" class="panel-collapse collapse in">
@@ -147,10 +147,10 @@
 								<a href="#topcountry"
 								   data-toggle="collapse"
 								   data-parent="#playlists"
-								   class="pdsa-panel-toggle glyphicon glyphicon-minus"></a>
+								   class="pdsa-panel-toggle"></a>
 							</h1>
 						</div>
-						<div id="topcountry" class="panel-collapse collapse in">
+						<div id="topcountry" class="panel-collapse collapse">
 							<div class="panel-body">
 								<h2>Top Country</h2>
 								<p>All of my favorite country songs.</p>
@@ -167,10 +167,10 @@
 								<a href="#topclassicrock"
 								   data-toggle="collapse"
 								   data-parent="#playlists"
-								   class="pdsa-panel-toggle glyphicon glyphicon-minus"></a>
+								   class="pdsa-panel-toggle"></a>
 							</h1>
 						</div>
-						<div id="topclassicrock" class="panel-collapse collapse in">
+						<div id="topclassicrock" class="panel-collapse collapse">
 							<div class="panel-body">
 								<h2>Top Classic Rock</h2>
 								<p>Classic rock songs which 'rock'.</p>
@@ -193,6 +193,22 @@
 	<script src="Scripts/bootstrap.min.js"></script>
 	<script src="Scripts/pdsa-common.js"></script>
 	<!-- *** END: Scripts *** -->
+
+	<script>
+		$(document).ready(function () {
+			$("#playlists .pdsa-panel-toggle")
+				.addClass("glyphicon glyphicon-plus")
+
+			var list = $("#playlists .in");
+			for (var i = 0; i < list.length; i++) {
+				$("a[href='#" + $(list[i]).attr("id") + "']")
+					.next(".pdsa-panel-toggle")
+					.removeClass("glyphicon-plus")
+					.addClass("glyphicon-minus");
+			}
+
+		});
+	</script>
 
 </body>
 </html>
